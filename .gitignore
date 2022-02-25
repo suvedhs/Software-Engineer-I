@@ -1,8 +1,7 @@
 node_modules
 .DS_Store
-build/*
 .env
 .cache/
 .vscode/
-app/
 *.log
+dist/

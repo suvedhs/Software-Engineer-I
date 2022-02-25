@@ -2,7 +2,7 @@
   "name": "software-engineer-i",
   "version": "1.0.0",
   "description": "Node.js rest api",
-  "main": "app/index.js",
+  "main": "dist/index.js",
   "scripts": {
     "test": "echo \"Error: no piña colada specified\" && exit 1",
     "start": "nodemon --watch src -e ts,ejs --exec npm run dev:start",
@@ -11,7 +11,7 @@
     "build": "npm-run-all clean lint tsc copy-assets",
     "copy-assets": "ts-node tools/copyAssets",
     "tsc": "tsc",
-    "clean": "rimraf app/*",
+    "clean": "rimraf dist/*",
     "lint": "tslint -c tslint.json -p tsconfig.json"
   },
   "repository": {
